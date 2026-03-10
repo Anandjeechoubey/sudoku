@@ -5,7 +5,7 @@ import React, { useState, useEffect, CSSProperties } from "react";
 type Board = number[][];
 
 // Generate a full valid Sudoku solution using backtracking
-dunction generateSolution(): Board {
+function generateSolution(): Board {
   const board: Board = Array.from({ length: 9 }, () => Array(9).fill(0));
 
   function isSafe(row: number, col: number, num: number): boolean {
